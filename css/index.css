@@ -1,0 +1,166 @@
+/* Resetting default margin and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(19, 22, 26);
+  
+}
+
+/*====== Font styling ======*/
+h1,h2,h3,h4,h5 {
+  color: white;
+}
+p {
+  color: white;
+  font-size: 1em;
+}
+ ul, ol, li {
+  color: white;
+  font-size: 1em;
+  list-style-type: none;
+ }
+
+.no-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.75;
+}
+a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+.title {
+  font-family: "Abril Fatface", serif;
+  font-size: 4em;
+  font-weight: 400;
+  font-style: normal;
+
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.subtitle {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+}
+.sub-subtitle {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* icons */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  color: white;
+  font-size: 3em;
+}
+
+
+/*========== BODY AND MAIN STYLING =========*/
+/* Styling for main sections */
+.fullpage-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+/*======== SECTIONS ========*/
+.fullpage-section {
+  width: 90%;
+  background-color: rgb(19, 22, 26);
+  scroll-snap-align: start;
+}
+.no-vh {
+  min-height: fit-content;
+}
+.section-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+/* Home */
+.text-div {
+  width: 50%;
+}
+.img-div {
+  width: 50%;
+  height: 400px;
+}
+.img-div img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* About */
+.michiel-img-div {
+ height: 100%;
+ width: 300px;
+}
+.michiel-img-div img {
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+}
+.grid-item {
+  flex: 1;
+
+  padding: 20px;
+  margin: 0 10px;
+  border: 1px solid white;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .section-div {
+      flex-direction: column;
+  }
+
+  .text-div, .img-div {
+      width: 100%;
+  }
+  .skills-grid {
+    flex-direction: column;
+  }
+}
+
+/* Basic styling for footer */
+footer {
+  background-color: rgb(19, 22, 26);
+  color: #fff;
+  text-align: center;
+  padding: 20px 20px;
+  margin-top: 200px;
+  width: 100%;
+
+  border-top: 1px solid white;
+}
