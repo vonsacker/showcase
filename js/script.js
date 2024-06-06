@@ -1,7 +1,7 @@
 
 
 
-/* navigation hamburger */ 
+// navigation hamburger
 const navEl = document.querySelector(".nav");
 const hamburgerEl = document.querySelector(".hamburger");
 
@@ -34,3 +34,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
