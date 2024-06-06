@@ -15,3 +15,4 @@ This website is a demonstration of my skills and projects.
 ## Contact
 
 Feel free to contact me at [vimichiel@hotmail.com](mailto:vimichiel@hotmail.com).
+[link to my website](https://vonsacker.github.io/showcase/).
