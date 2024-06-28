@@ -183,6 +183,29 @@ a:hover {
   font-size: 1em;
 }
 
+/* Work */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-item {
+  text-align: center;
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.project-item img:hover {
+  transform: scale(1.05);
+}
+
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .section-div {
