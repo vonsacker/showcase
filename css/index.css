@@ -11,6 +11,9 @@
   --highlight-color: #ffd700;
 }
 
+.material-symbols-outlined {
+  font-family: var(--icon-font);
+}
 /* Resetting default margin and padding */
 html,
 body {
@@ -33,7 +36,7 @@ h3,
 h4,
 h5 {
   color: var(--text-color);
-  font-family: var(--secondary-font);
+  
 }
 p {
   color: var(--text-color);
