@@ -183,26 +183,57 @@ a:hover {
   font-size: 1em;
 }
 
-/* Work */
+/* WORK ===================== */
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 20px;
   margin-top: 20px;
 }
 
 .project-item {
-  text-align: center;
+  flex: 1 1 calc(33.333% - 20px);
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+  background-color: #1e1e1e;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 75%;
+  overflow: hidden;
 }
 
 .project-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.3s;
+}
+.project-item p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  color: white;
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .project-item img:hover {
   transform: scale(1.05);
+}
+.project-item:hover p {
+  opacity: 1;
 }
 
 
@@ -219,6 +250,11 @@ a:hover {
   .skills-grid {
     grid-template-columns: 1fr;
   }
+  .projects-grid {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  
 }
 
 /* Basic styling for footer */
