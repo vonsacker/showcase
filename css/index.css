@@ -142,11 +142,10 @@ a:hover {
 #profile-pic {
   height: 200px;
 }
-#profile-pic img {
-  
-}
+
 .profile-pic-div {
   height: auto;
+  display: flex;
 
 }
 /* Skills */
