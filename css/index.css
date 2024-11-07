@@ -131,22 +131,24 @@ a:hover {
   object-fit: cover;
 }
 
-/* About */
-.michiel-img-div {
-  height: 100%;
-  width: 300px;
-}
-.michiel-img-div img {
-  object-fit: cover;
-  border-radius: 20px;
-}
+/* ===========================About */
+
 
 #worklist ul>li {
   font-weight: 100;
   list-style-type: circle;
   line-height: 1.5;
 }
+#profile-pic {
+  height: 200px;
+}
+#profile-pic img {
+  
+}
+.profile-pic-div {
+  height: auto;
 
+}
 /* Skills */
 .skills-grid {
   display: grid;
