@@ -141,6 +141,12 @@ a:hover {
   border-radius: 20px;
 }
 
+#worklist ul>li {
+  font-weight: 100;
+  list-style-type: circle;
+  line-height: 1.5;
+}
+
 /* Skills */
 .skills-grid {
   display: grid;
