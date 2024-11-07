@@ -103,7 +103,7 @@ a:hover {
 
 /*======== SECTIONS ========*/
 .fullpage-section {
-  width: 90%;
+  width: 70%;
   background-color: var(--background-color);
   scroll-snap-align: start;
 }
@@ -120,7 +120,7 @@ a:hover {
 
 /* Home */
 .text-div {
-  width: 50%;
+  width: 80%;
 }
 .img-div {
   width: 50%;
@@ -210,6 +210,7 @@ a:hover {
   overflow: hidden;
 }
 
+
 .project-item img {
   position: absolute;
   top: 0;
@@ -257,6 +258,9 @@ a:hover {
   .projects-grid {
     flex-direction: column;
     flex-wrap: nowrap;
+  }
+  .fullpage-section {
+    width: 80%;
   }
   
 }
